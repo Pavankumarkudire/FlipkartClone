@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f2f4;
+}
+
+
+.Container {
+    max-width: 1334px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 1001;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #474748;
+    background-color: white;
+
+}
+
+
+.searchContainer {
+    height: 40px;
+    width: 560px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #777a7e;
+    background-color: #f0f5ff;
+    display: block;
+}
+
+.searchContainer .idicon {
+    font-size: 1.9rem;
+    margin: 0px 10px;
+}
+
+.searchContainer input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.1rem;
+}
+
+.becomeSellerContainer {
+    display: flex;
+}
+
+.becomeSellerContainer p {
+    margin-top: 13px;
+}
+
+.HeaderIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 400;
+}
+
+.HeaderIcon .idicon {
+    font-size: 1rem;
+}
+
+.Cart {
+    display: block;
+}
+
+.MenuBar {
+    display: none;
+}
+
+
+
+/* Catagory section */
+.Catagory {
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 80px 0px;
+    box-shadow: 0 0 0 10px #f2f2f2;
+
+}
+
+
+
+/* Best of Electronic */
+.BestOfElecrtonics {
+    height: 345px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    
+}
+
+.psright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.psright img {
+    height: 320px;
+    width: 210px;
+}
+
+.psleft {
+    height: 100%;
+    width: 1110px;
+    background-color: white;
+    position: relative;
+}
+
+.productheader {
+    height: 80px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productheader h3 {
+    color: #212121;
+}
+
+.productheader .prodicon {
+
+    height: 24px;
+    width: 24px;
+    color: white;
+    background-color: #1c41dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.productInfo {
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid #5555;
+    border-radius: 3px;
+    margin: 0px 13px;
+}
+
+.prodImg img {
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+}
+
+.prodinfo {
+    text-align: center;
+}
+
+.prodinfo p {
+    font-size: 0.9rem;
+}
+
+.prodinfo h5 {
+    color: #333;
+    font-size: 15px;
+}
+
+.Product {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+
+}
+
+.ProdMore {
+    display: none;
+}
+
+.productright {
+    position: absolute;
+    height: 88px;
+    width: 40px;
+    background-color: white;
+    color: #8b8b8b;
+    display: flex;
+    justify-content: center;
+    top: 32%;
+    right: 0;
+    box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+}
+
+.RightAngle {
+    position: absolute;
+    top: 35%;
+}
+
+
+
+
+
+/* Beauty, Food, Toys % more  */
+.BeautyProducts {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.psleft2 {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+/* Product section */
+
+.ProductsSection {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+
+}
+
+.pbleft {
+    height: 100%;
+    width: 430px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 0 10px #f2f2f2;
+
+}
+
+.pbleft .Product2Card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pbright {
+    width: 900px;
+}
+
+.pbright img {
+    width: 100%;
+    height: 100%;
+}
+
+/* branddirectory */
+.branddirectory a{
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+/* footer */
+Footer {
+    margin-top: 10px;
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+    padding: 30px 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.footer h6 {
+    color: #c8c4c455;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.AboutBox {
+    line-height: 15px;
+
+}
+
+.CompaniesBox {
+    line-height: 15px;
+
+}
+
+.FlipkartLocation {
+    width: 200px;
+}
+
+.LocationAddress {
+    width: 250px;
+}
+
+
+
+
+@media screen and (max-width:476px) {
+
+    /* Header */
+
+    .searchContainer {
+        display: none;
+        width: 0%;
+    }
+
+    .searchContainer .idicon {
+        display: none;
+    }
+
+    .searchContainer input {
+        display: none;
+    }
+
+    .HeaderIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 400;
+    }
+
+    .HeaderIcon i {
+        font-size: 1.8rem;
+    }
+
+    div>.idicon {
+        font-size: 0.7rem;
+    }
+
+    .Cart {
+        display: none;
+    }
+
+    .MenuBar {
+        display: block;
+    }
+
+    .MoreOption {
+        display: none;
+    }
+
+
+    /* Catagory section */
+    .Catagory {
+        height: 136px;
+        overflow: hidden;
+    }
+
+
+    /* Best of Electronic */
+
+    .BestOfElecrtonics {
+        height: 100%;
+        width: 100%;
+    }
+
+    .psright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: none;
+    }
+
+    .prodImg img {
+        width: 100px;
+        margin: auto;
+    }
+
+
+    .prodinfo p {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .prodinfo h5 {
+        font-size: 0.8rem;
+    }
+
+    .Product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ProdMore {
+        display: block;
+        margin: 40px 60px;
+    }
+
+    .productright {
+        display: none;
+    }
+
+    .RightAngle {
+        display: none;
+    }
+
+
+    /* Beauty, Food, Toys % more  */
+    .BeautyProducts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .psleft2 {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    /* Product section */
+
+    .ProductsSection {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 10px;
+
+    }
+
+    .Product2Card {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+    }
+
+    .pbright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 100%;
+    }
+
+
+
+    /* footer */
+    Footer {
+        display: none;
+    }
+}
+
+
+@media (min-width:476px) and (max-width:768px) {
+
+    /* Header */
+
+    .searchContainer {
+        display: none;
+        width: 0%;
+    }
+
+    .searchContainer .idicon {
+        display: none;
+    }
+
+    .searchContainer input {
+        display: none;
+    }
+
+    .HeaderIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 400;
+    }
+
+    .HeaderIcon .idicon {
+        font-size: 1rem;
+    }
+
+    div>.idicon {
+        font-size: 0.7rem;
+    }
+
+    .Cart {
+        display: none;
+    }
+
+    .MenuBar {
+        display: block;
+    }
+
+
+    /* Catagory section */
+    .Catagory {
+        height: 136px;
+        overflow: hidden;
+    }
+
+
+    /* Best of Electronic */
+
+
+
+    .BestOfElecrtonics {
+        height: 100%;
+        width: 100%;
+    }
+
+    .psright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: none;
+    }
+
+    .prodImg img {
+        height: 200px;
+        width: 150px;
+        margin: auto;
+    }
+
+
+    .prodinfo p {
+        font-size: 0.7rem;
+    }
+
+    .prodinfo h5 {
+        font-size: 0.8rem;
+    }
+
+    .Product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ProdMore {
+        display: block;
+        margin: 40px 100px;
+    }
+
+
+    .productright {
+        display: none;
+    }
+
+    .RightAngle {
+        display: none;
+    }
+
+
+    /* Beauty, Food, Toys % more  */
+    .BeautyProducts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .psleft2 {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+
+
+    /* Product section */
+
+    .ProductsSection {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+
+    }
+
+
+    .pbleft {
+        height: 100%;
+        width: 600px;
+
+    }
+
+    .pbright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 100%;
+    }
+
+    .pbright img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* footer */
+    Footer {
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    /* Header */
+
+    .searchContainer {
+        display: block;
+        width: 50%;
+    }
+
+
+
+    .HeaderIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 400;
+    }
+
+    .HeaderIcon .idicon {
+        font-size: 1.0rem;
+    }
+
+    div>.idicon {
+        font-size: 0.7rem;
+    }
+
+    .Cart {
+        display: block;
+    }
+
+    .MenuBar {
+        display: none;
+    }
+
+    /* Catagory section */
+    .Catagory {
+        height: 136px;
+        overflow: hidden;
+    }
+
+
+    /* Best of Electronic */
+
+    .BestOfElecrtonics {
+        height: 100%;
+        width: 100%;
+    }
+
+    .psright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid #5555;
+        border-radius: 3px;
+        margin: 0px 3px;
+    }
+
+    .prodImg img {
+        height: 150px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .prodinfo {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .prodinfo p {
+        font-size: 0.9rem;
+    }
+
+    .prodinfo h5 {
+        color: #333;
+        margin-top: 5px;
+
+    }
+
+    .Product {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+    }
+
+    .ProdMore {
+        display: none;
+    }
+
+
+    .productright {
+        display: none;
+    }
+
+    .RightAngle {
+        display: none;
+    }
+
+
+    /* Beauty, Food, Toys % more  */
+    .BeautyProducts {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .psleft2 {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+
+
+    /* Product section */
+
+    .ProductsSection {
+        height: auto;
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        gap: 200px;
+
+    }
+
+
+    .pbleft {
+        height: 100%;
+        width: 1110px;
+        background-color: white;
+        position: relative;
+
+    }
+
+    .pbright {
+        display: none;
+    }
+
+    .productInfo {
+        height: 250px;
+        width: 100%;
+    }
+
+    .pbright img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pbleft .Product2Card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* footer */
+    Footer {
+        margin-top: 30px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

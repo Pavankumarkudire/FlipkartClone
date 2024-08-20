@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <!-- font-awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper (includes JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="MenuBar"><i class="fa-solid fa-bars"></i></div>
+        <div class="logoContainer">
+            <img src="images/fkheaderlogo_exploreplus.svg" alt="Flipkart logo" class="mainLogo">
+        </div>
+        <div class="searchContainer HeaderIcon">
+            <i class=" idicon fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Swarch for products, brands and more">
+        </div>
+        <div class="loginContainer HeaderIcon">
+            <div class="login">
+                <i class="idicon fa-regular fa-circle-user"></i> Login
+            </div>
+        </div>
+        <div class="CartContainer HeaderIcon">
+            <i class=" idicon fa-solid fa-cart-shopping"></i> <span class="Cart">Cart</span>
+        </div>
+        <div class="becomeSellerContainer HeaderIcon">
+            <i class="idicon fa-solid fa-store"></i>
+            <p class="Cart"> Become a seller </p>
+
+        </div>
+        <div class="MoreOption HeaderIcon">
+            <i class=" idicon fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+
+    <!-- Catrgory section -->
+    <div class="Container">
+        <div class="Catagory">
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img1.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Grocery</p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img2.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Mobiles</p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img3.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Fashion <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img4.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Electonics <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img5.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Home & Furniture <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img6.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Appliances</p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img7.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Travel</p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img8.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Beauty, Toys & More <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="catagoryCard-info">
+                <div class="catimg">
+                    <img src="images/img9.webp" alt="img1">
+                </div>
+                <div class="catinfo">
+                    <p>Two Wheelers <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="carouselExampleDark" class="carousel  slide" data-bs-ride="carousel"
+                data-bs-interval="1000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Sliderimg1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sliderimg2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sliderimg3.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sliderimg4.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sliderimg5.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Best of Electronics -->
+        <div class="Container">
+            <div class="BestOfElecrtonics">
+                <div class="psleft">
+                    <div class="productheader">
+                        <h3>Best of Electronics</h3>
+                        <i class="prodicon fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="Product" id="productsHolder"></div>
+
+                    <div class="productright">
+                        <i class="RightAngle fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="psright">
+                    <img src="images/productright.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Beauty, Food, Toys % more -->
+        <div class="Container">
+            <div class="BeautyProducts">
+                <div class="psleft2">
+                    <div class="productheader">
+                        <h3>Beauty, Food, Toys & more</h3>
+                        <i class="prodicon fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="Product">
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB1.jpeg" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Geared Cycle</h5>
+                                <p>Up to 70% Off</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                        </div>
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB2.webp" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Electric Cycle</h5>
+                                <p>Up to 40% Off</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                        </div>
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB3.webp" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Best of Action Toys</h5>
+                                <p>Up to 70% Off</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                        </div>
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB4.webp" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Gym Essentials</h5>
+                                <p>From ₹139</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                        </div>
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB5.webp" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Treandmil, Exercise Bikes & More</h5>
+                                <p>Up to 70% Off</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                        </div>
+                        <div class="productInfo">
+                            <div class="prodImg">
+                                <img src="images/productB6.webp" alt="">
+                            </div>
+                            <div class="prodinfo">
+                                <h5>Microphones</h5>
+                                <p>Up to 70% Off</p>
+                            </div>
+                            <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <!-- <div class="productrightB">
+                        <i class="RightAngle fa-solid fa-angle-right"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product section-->
+
+    <div class="Container">
+        <div class="ProductsSection">
+            <div class="pbleft">
+                <div class="productheader">
+                    <h3>Best Gadgents & Applications</h3>
+                    <i class="prodicon fa-solid fa-angle-right"></i>
+                </div>
+                <div class="Product2Card">
+                    <div class="productInfor">
+                        <div class="prodImg">
+                            <img src="images/product1.png" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <p>Best Truewireless Headphones</p>
+                            <h5>Grap Now</h5>
+                        </div>
+                    </div>
+                    <div class="productInfor">
+                        <div class="prodImg">
+                            <img src="images/product2.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <p>FastTrack smartwatches</p>
+                            <h5>From ₹1,399</h5>
+                        </div>
+                    </div>
+                    <div class="productInfor">
+                        <div class="prodImg">
+                            <img src="images/product3.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <p>viewSonic monitors</p>
+                            <h5>From ₹8000</h5>
+                        </div>
+                    </div>
+                    <div class="productInfor">
+                        <div class="prodImg">
+                            <img src="images/product4.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <p>FastTrack smartwatches</p>
+                            <h5>From ₹1,399</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="productrightC">
+                    <i class="RightAngle fa-solid fa-angle-right"></i>
+                </div> -->
+            </div>
+            <div class="pbright">
+                <img src="images/ExpolreImg.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Product section 2-->
+    <div class="Container">
+        <div class="BeautyProducts">
+            <div class="psleft2">
+                <div class="productheader">
+                    <h3>Beauty, Food, Toys & more</h3>
+                    <i class="prodicon fa-solid fa-angle-right"></i>
+                </div>
+                <div class="Product">
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB1.jpeg" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Geared Cycle</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB2.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Electric Cycle</h5>
+                            <p>Up to 40% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB3.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Best of Action Toys</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB4.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Gym Essentials</h5>
+                            <p>From ₹139</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB5.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Treandmil, Exercise Bikes & More</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB6.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Microphones</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Product section 3-->
+
+
+    <div class="Container">
+        <div class="BeautyProducts">
+            <div class="psleft2">
+                <div class="productheader">
+                    <h3>Beauty, Food, Toys & more</h3>
+                    <i class="prodicon fa-solid fa-angle-right"></i>
+                </div>
+                <div class="Product">
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB1.jpeg" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Geared Cycle</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB2.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Electric Cycle</h5>
+                            <p>Up to 40% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB3.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Best of Action Toys</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB4.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Gym Essentials</h5>
+                            <p>From ₹139</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB5.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Treandmil, Exercise Bikes & More</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+                    <div class="productInfo">
+                        <div class="prodImg">
+                            <img src="images/productB6.webp" alt="">
+                        </div>
+                        <div class="prodinfo">
+                            <h5>Microphones</h5>
+                            <p>Up to 70% Off</p>
+                        </div>
+                        <div class="ProdMore"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Brand Directory -->
+    <div class="Container">
+        <div class="branddirectory">
+            <div class="linkheader">
+                <h4>Top Stories : Brand Directory</h4>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+            <div class="directorylink">
+                <span>MOST SEARCHED FOR ON FLIPKART:</span> <a href="#">Rakhi</a>|<a href="#">Rakhi Gifts for
+                    Brother</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone
+                    2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a href="#">Nothing Phone 2a plus</a>|<a
+                    href="#">Nothing Phone 2a plus</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <Footer>
+        <div class="footer">
+            <!-- <div class="FooterLinks"> -->
+            <div class="AboutBox">
+                <h6>About</h6>
+                <p class="AboutLink"> <a href="#">Contact us</a> </p>
+                <p class="AboutLink"> <a href="#">About us</a> </p>
+                <p class="AboutLink"> <a href="#">Careers</a> </p>
+                <p class="AboutLink"> <a href="#">Flipkart Stories</a> </p>
+                <p class="AboutLink"> <a href="#">Press</a> </p>
+                <p class="AboutLink"> <a href="#">Corporate information</a> </p>
+            </div>
+            <div class="CompaniesBox">
+                <h6>GROUP COMPANIES</h6>
+                <p><a href="#">Myntra</a> </p>
+                <p><a href="#">Cleartrip</a></p>
+                <p><a href="#">Shopsy</a></p>
+            </div>
+            <div class="PaymentBox">
+                <h6>HELP</h6>
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation & Returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Report Infringement</a>
+            </div>
+            <div class="ConsumersBox">
+                <h6>CONSUMER POLICY</h6>
+                <a href="#">Cancellation & Returns</a>
+                <a href="#">Terms Of Use </a>
+                <a href="#">Security </a>
+                <a href="#">Privecy </a>
+                <a href="#">Sitemap </a>
+                <a href="#">Grievance Redressal </a>
+                <a href="#">EPR Compilance </a>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="CompaniesAddress"> -->
+            <div class="FlipkartLocation">
+                <div>
+                    <h6>Mail Us:</h6>
+                    <p>Flipkart Internet Private Limited,Buildings Alyssa, Bengonia & Clove Embassy Tech Village,
+                        Outer
+                        Ring
+                        Road, Devarabessanahalli Village, Bengaluru, 560103, Karnataka, India</p>
+                </div>
+                <div class="SocialMedia">
+                    <h6>Social:</h6>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="LocationAddress">
+                <h6>Registered Office Address:</h6>
+                <p>Flipkart Internet Private Limited,Buildings Alyssa, Bengonia & Clove Embassy Tech Village, Outer
+                    Ring Road, Devarabessanahalli Village, Bengaluru, 560103, Karnataka, India </p>
+                <p>CIN : U51109KA2012PTC066107</p>
+                <p>Telephone: <span style="color:#0000ff;">044-45614700</span> / <span style="color:#0000ff;">
+                        044-67415800 </span></p>
+            </div>
+            <!-- </div> -->
+        </div>
+    </Footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
