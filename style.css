@@ -94,7 +94,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    margin: 80px 0px;
+    margin: 80px 0px 10px 0px;
     box-shadow: 0 0 0 10px #f2f2f2;
 
 }
